@@ -1,0 +1,89 @@
+{
+    "compilerOptions": {
+      "outDir": "build/dist",
+      "module": "es2015",
+      "target": "es5",
+      "lib": [
+        "es6",
+        "dom"
+      ],
+      "sourceMap": true,
+      "experimentalDecorators": true,
+      "allowJs": true,
+      "jsx": "react",
+      "moduleResolution": "node",
+      "rootDir": "src",
+      "forceConsistentCasingInFileNames": true,
+      "noImplicitReturns": true,
+      "noImplicitThis": true,
+      "noImplicitAny": false,
+      "strictNullChecks": true,
+      "strict": false,
+      "suppressImplicitAnyIndexErrors": true,
+      "allowSyntheticDefaultImports": true,
+      "noUnusedLocals": true,
+      "skipLibCheck": true,
+      "baseUrl": "./",
+      "paths": {
+        "@/*": [
+          "src/*"
+        ],
+        "@pages/*": [
+          "src/pages/*"
+        ],
+        "@components/*": [
+          "src/components/*"
+        ],
+        "@utils/*": [
+          "src/utils/*"
+        ],
+        "@store/*": [
+          "src/store/*"
+        ],
+        "@resources/*": [
+          "src/resources/*"
+        ],
+        "@core/*": [
+          "src/core_modules/*"
+        ],
+        "@api/*": [
+          "src/core_modules/api/*"
+        ],
+        "@service/*": [
+          "src/core_modules/service/*"
+        ],
+        "@macro/*": [
+          "src/core_modules/macro/*"
+        ],
+        "@models/*": [
+          "src/core_modules/models/*"
+        ]
+      }
+    },
+    "filesGlob": [
+      "src/**/*.ts",
+      "src/**/*.tsx"
+    ],
+    "types": [
+      "react",
+      "react-native",
+      "jest"
+    ],
+    "include": [
+      "src/**/*"
+    ],
+    "exclude": [
+      "scripts",
+      "webpack",
+      "jest",
+      "android",
+      "ios",
+      "build",
+      "config",
+      "node_modules",
+      "dll.config.js",
+      "postcss.config.js",
+      "index.js"
+    ],
+    "compileOnSave": false
+  }
