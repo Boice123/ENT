@@ -1,0 +1,82 @@
+doctype html
+html
+    head
+        meta(charset="UTF8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="format-detection", content="telephone=no, email=no")
+        meta(name="description" content="")
+        meta(name="keywords" content="")
+        title= title
+        link(href="../element-ui/theme-chalk/index.css" , rel='stylesheet')
+    body
+        el-container#app(v-cloak)
+            el-header
+                el-row
+                    el-col.text-left(:span=6)
+                        h1 ENT管理系统
+                el-row
+                    el-col.text-middle(:span=6)
+                        h1 新增管理员
+            el-container
+                el-container
+                    el-main(style="width:400px;margin:0 auto;")
+                        el-form(ref='form' :rules="rules"  :model="admin" style="width:400px;margin: 0 auto;padding-top:100px;" label-width="100px" )
+                            el-form-item(label="管理员账号" prop="adminname")
+                                el-input( v-model="admin.adminname")
+                            el-form-item(label="管理员密码" prop="password")
+                                el-input( type="password" v-model="admin.password")
+                            el-form-item
+                                el-button(type="primary" @click="save('form')") 新增
+    
+    include /cssjs_foot.pug
+    script.
+        var returnURL = '!{returnURL}';
+        var app = new Vue({
+            el: "#app",
+            data: {
+                rules: {
+                    adminname: [
+                        {required: true, message: '请输入管理员账号', trigger: 'blur'},
+                    ],
+                    password: [
+                        {required: true, message: '请输入管理员密码', trigger: 'blur'},
+                    ],
+                },
+                admin: {
+                    adminname: "",
+                    password: "",
+                    addtime: "",
+                    lasttime: ""
+                },
+
+            },
+            methods: {
+                save: function(formName) {
+                    var self = this;
+                    self.$refs[formName].validate(function(valid) {
+                        if (valid) {
+                            $.ajax({
+                                url: Api.saveURL,
+                                method: "POST",
+                                dataType: "json",
+                                data: self.admin,
+                                success: function(result) {
+                                    if (result.status == 0) {
+                                        console.log(result)
+                                        location.href = Api.baseUrl;
+                                    } else {
+                                        self.$message({
+                                            showClose: true,
+                                            message: result.msg,
+                                            type: 'error'
+                                        });
+                                    }
+                                }
+                            })
+                        } else {
+                            return false;
+                        }
+                    });
+                },
+            }
+        })

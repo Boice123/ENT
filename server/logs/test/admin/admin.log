@@ -1,0 +1,406 @@
+[2018-06-18 21:56:58.868] [ERROR] admin/admin - 保存管理员错误
+[2018-06-18 21:56:58.871] [ERROR] admin/admin - { SequelizeDatabaseError: Field 'addtime' doesn't have a default value
+    at Query.formatError (/Users/wuxiuzhen/workspace/server/node_modules/sequelize/lib/dialects/mysql/query.js:247:16)
+    at Query.handler [as onResult] (/Users/wuxiuzhen/workspace/server/node_modules/sequelize/lib/dialects/mysql/query.js:68:23)
+    at Query.Command.execute (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/commands/command.js:30:12)
+    at Connection.handlePacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread [as _originalOnread] (net.js:597:20)
+    at TCP.onread (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+  name: 'SequelizeDatabaseError',
+  parent: 
+   { Error: Field 'addtime' doesn't have a default value
+    at Packet.asError (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at Query.Command.execute (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread [as _originalOnread] (net.js:597:20)
+    at TCP.onread (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+     code: 'ER_NO_DEFAULT_FOR_FIELD',
+     errno: 1364,
+     sqlState: 'HY000',
+     sqlMessage: 'Field \'addtime\' doesn\'t have a default value',
+     sql: 'INSERT INTO `admins` (`id`,`adminname`,`password`) VALUES (DEFAULT,\'admin\',\'admin\');' },
+  original: 
+   { Error: Field 'addtime' doesn't have a default value
+    at Packet.asError (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at Query.Command.execute (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread [as _originalOnread] (net.js:597:20)
+    at TCP.onread (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+     code: 'ER_NO_DEFAULT_FOR_FIELD',
+     errno: 1364,
+     sqlState: 'HY000',
+     sqlMessage: 'Field \'addtime\' doesn\'t have a default value',
+     sql: 'INSERT INTO `admins` (`id`,`adminname`,`password`) VALUES (DEFAULT,\'admin\',\'admin\');' },
+  sql: 'INSERT INTO `admins` (`id`,`adminname`,`password`) VALUES (DEFAULT,\'admin\',\'admin\');' }
+[2018-06-18 21:57:42.858] [ERROR] admin/admin - 保存管理员错误
+[2018-06-18 21:57:42.858] [ERROR] admin/admin - { SequelizeDatabaseError: Field 'addtime' doesn't have a default value
+    at Query.formatError (/Users/wuxiuzhen/workspace/server/node_modules/sequelize/lib/dialects/mysql/query.js:247:16)
+    at Query.handler [as onResult] (/Users/wuxiuzhen/workspace/server/node_modules/sequelize/lib/dialects/mysql/query.js:68:23)
+    at Query.Command.execute (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/commands/command.js:30:12)
+    at Connection.handlePacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread [as _originalOnread] (net.js:597:20)
+    at TCP.onread (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+  name: 'SequelizeDatabaseError',
+  parent: 
+   { Error: Field 'addtime' doesn't have a default value
+    at Packet.asError (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at Query.Command.execute (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread [as _originalOnread] (net.js:597:20)
+    at TCP.onread (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+     code: 'ER_NO_DEFAULT_FOR_FIELD',
+     errno: 1364,
+     sqlState: 'HY000',
+     sqlMessage: 'Field \'addtime\' doesn\'t have a default value',
+     sql: 'INSERT INTO `admins` (`id`,`adminname`,`password`) VALUES (DEFAULT,\'admin\',\'admin\');' },
+  original: 
+   { Error: Field 'addtime' doesn't have a default value
+    at Packet.asError (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at Query.Command.execute (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread [as _originalOnread] (net.js:597:20)
+    at TCP.onread (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+     code: 'ER_NO_DEFAULT_FOR_FIELD',
+     errno: 1364,
+     sqlState: 'HY000',
+     sqlMessage: 'Field \'addtime\' doesn\'t have a default value',
+     sql: 'INSERT INTO `admins` (`id`,`adminname`,`password`) VALUES (DEFAULT,\'admin\',\'admin\');' },
+  sql: 'INSERT INTO `admins` (`id`,`adminname`,`password`) VALUES (DEFAULT,\'admin\',\'admin\');' }
+[2018-06-18 21:58:31.733] [ERROR] admin/admin - 保存管理员错误
+[2018-06-18 21:58:31.736] [ERROR] admin/admin - { SequelizeDatabaseError: Field 'addtime' doesn't have a default value
+    at Query.formatError (/Users/wuxiuzhen/workspace/server/node_modules/sequelize/lib/dialects/mysql/query.js:247:16)
+    at Query.handler [as onResult] (/Users/wuxiuzhen/workspace/server/node_modules/sequelize/lib/dialects/mysql/query.js:68:23)
+    at Query.Command.execute (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/commands/command.js:30:12)
+    at Connection.handlePacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread [as _originalOnread] (net.js:597:20)
+    at TCP.onread (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+  name: 'SequelizeDatabaseError',
+  parent: 
+   { Error: Field 'addtime' doesn't have a default value
+    at Packet.asError (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at Query.Command.execute (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread [as _originalOnread] (net.js:597:20)
+    at TCP.onread (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+     code: 'ER_NO_DEFAULT_FOR_FIELD',
+     errno: 1364,
+     sqlState: 'HY000',
+     sqlMessage: 'Field \'addtime\' doesn\'t have a default value',
+     sql: 'INSERT INTO `admins` (`id`,`adminname`,`password`) VALUES (DEFAULT,\'admin\',\'admin\');' },
+  original: 
+   { Error: Field 'addtime' doesn't have a default value
+    at Packet.asError (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at Query.Command.execute (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread [as _originalOnread] (net.js:597:20)
+    at TCP.onread (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+     code: 'ER_NO_DEFAULT_FOR_FIELD',
+     errno: 1364,
+     sqlState: 'HY000',
+     sqlMessage: 'Field \'addtime\' doesn\'t have a default value',
+     sql: 'INSERT INTO `admins` (`id`,`adminname`,`password`) VALUES (DEFAULT,\'admin\',\'admin\');' },
+  sql: 'INSERT INTO `admins` (`id`,`adminname`,`password`) VALUES (DEFAULT,\'admin\',\'admin\');' }
+[2018-06-18 21:59:15.714] [ERROR] admin/admin - 保存管理员错误
+[2018-06-18 21:59:15.715] [ERROR] admin/admin - { SequelizeDatabaseError: Field 'addtime' doesn't have a default value
+    at Query.formatError (/Users/wuxiuzhen/workspace/server/node_modules/sequelize/lib/dialects/mysql/query.js:247:16)
+    at Query.handler [as onResult] (/Users/wuxiuzhen/workspace/server/node_modules/sequelize/lib/dialects/mysql/query.js:68:23)
+    at Query.Command.execute (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/commands/command.js:30:12)
+    at Connection.handlePacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread [as _originalOnread] (net.js:597:20)
+    at TCP.onread (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+  name: 'SequelizeDatabaseError',
+  parent: 
+   { Error: Field 'addtime' doesn't have a default value
+    at Packet.asError (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at Query.Command.execute (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread [as _originalOnread] (net.js:597:20)
+    at TCP.onread (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+     code: 'ER_NO_DEFAULT_FOR_FIELD',
+     errno: 1364,
+     sqlState: 'HY000',
+     sqlMessage: 'Field \'addtime\' doesn\'t have a default value',
+     sql: 'INSERT INTO `admins` (`id`,`adminname`,`password`) VALUES (DEFAULT,\'admin\',\'admin\');' },
+  original: 
+   { Error: Field 'addtime' doesn't have a default value
+    at Packet.asError (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at Query.Command.execute (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread [as _originalOnread] (net.js:597:20)
+    at TCP.onread (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+     code: 'ER_NO_DEFAULT_FOR_FIELD',
+     errno: 1364,
+     sqlState: 'HY000',
+     sqlMessage: 'Field \'addtime\' doesn\'t have a default value',
+     sql: 'INSERT INTO `admins` (`id`,`adminname`,`password`) VALUES (DEFAULT,\'admin\',\'admin\');' },
+  sql: 'INSERT INTO `admins` (`id`,`adminname`,`password`) VALUES (DEFAULT,\'admin\',\'admin\');' }
+[2018-06-18 22:01:39.733] [ERROR] admin/admin - 保存管理员错误
+[2018-06-18 22:01:39.735] [ERROR] admin/admin - { SequelizeDatabaseError: Field 'addtime' doesn't have a default value
+    at Query.formatError (/Users/wuxiuzhen/workspace/server/node_modules/sequelize/lib/dialects/mysql/query.js:247:16)
+    at Query.handler [as onResult] (/Users/wuxiuzhen/workspace/server/node_modules/sequelize/lib/dialects/mysql/query.js:68:23)
+    at Query.Command.execute (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/commands/command.js:30:12)
+    at Connection.handlePacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread [as _originalOnread] (net.js:597:20)
+    at TCP.onread (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+  name: 'SequelizeDatabaseError',
+  parent: 
+   { Error: Field 'addtime' doesn't have a default value
+    at Packet.asError (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at Query.Command.execute (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread [as _originalOnread] (net.js:597:20)
+    at TCP.onread (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+     code: 'ER_NO_DEFAULT_FOR_FIELD',
+     errno: 1364,
+     sqlState: 'HY000',
+     sqlMessage: 'Field \'addtime\' doesn\'t have a default value',
+     sql: 'INSERT INTO `admins` (`id`,`adminname`,`password`) VALUES (DEFAULT,\'admin\',\'admin\');' },
+  original: 
+   { Error: Field 'addtime' doesn't have a default value
+    at Packet.asError (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at Query.Command.execute (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread [as _originalOnread] (net.js:597:20)
+    at TCP.onread (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+     code: 'ER_NO_DEFAULT_FOR_FIELD',
+     errno: 1364,
+     sqlState: 'HY000',
+     sqlMessage: 'Field \'addtime\' doesn\'t have a default value',
+     sql: 'INSERT INTO `admins` (`id`,`adminname`,`password`) VALUES (DEFAULT,\'admin\',\'admin\');' },
+  sql: 'INSERT INTO `admins` (`id`,`adminname`,`password`) VALUES (DEFAULT,\'admin\',\'admin\');' }
+[2018-06-18 22:02:23.708] [ERROR] admin/admin - 保存管理员错误
+[2018-06-18 22:02:23.709] [ERROR] admin/admin - { SequelizeDatabaseError: Field 'addtime' doesn't have a default value
+    at Query.formatError (/Users/wuxiuzhen/workspace/server/node_modules/sequelize/lib/dialects/mysql/query.js:247:16)
+    at Query.handler [as onResult] (/Users/wuxiuzhen/workspace/server/node_modules/sequelize/lib/dialects/mysql/query.js:68:23)
+    at Query.Command.execute (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/commands/command.js:30:12)
+    at Connection.handlePacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread [as _originalOnread] (net.js:597:20)
+    at TCP.onread (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+  name: 'SequelizeDatabaseError',
+  parent: 
+   { Error: Field 'addtime' doesn't have a default value
+    at Packet.asError (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at Query.Command.execute (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread [as _originalOnread] (net.js:597:20)
+    at TCP.onread (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+     code: 'ER_NO_DEFAULT_FOR_FIELD',
+     errno: 1364,
+     sqlState: 'HY000',
+     sqlMessage: 'Field \'addtime\' doesn\'t have a default value',
+     sql: 'INSERT INTO `admins` (`id`,`adminname`,`password`) VALUES (DEFAULT,\'admin\',\'admin\');' },
+  original: 
+   { Error: Field 'addtime' doesn't have a default value
+    at Packet.asError (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at Query.Command.execute (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread [as _originalOnread] (net.js:597:20)
+    at TCP.onread (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+     code: 'ER_NO_DEFAULT_FOR_FIELD',
+     errno: 1364,
+     sqlState: 'HY000',
+     sqlMessage: 'Field \'addtime\' doesn\'t have a default value',
+     sql: 'INSERT INTO `admins` (`id`,`adminname`,`password`) VALUES (DEFAULT,\'admin\',\'admin\');' },
+  sql: 'INSERT INTO `admins` (`id`,`adminname`,`password`) VALUES (DEFAULT,\'admin\',\'admin\');' }
+[2018-06-18 22:02:23.710] [ERROR] admin/admin - 保存管理员错误
+[2018-06-18 22:02:23.710] [ERROR] admin/admin - { SequelizeDatabaseError: Field 'addtime' doesn't have a default value
+    at Query.formatError (/Users/wuxiuzhen/workspace/server/node_modules/sequelize/lib/dialects/mysql/query.js:247:16)
+    at Query.handler [as onResult] (/Users/wuxiuzhen/workspace/server/node_modules/sequelize/lib/dialects/mysql/query.js:68:23)
+    at Query.Command.execute (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/commands/command.js:30:12)
+    at Connection.handlePacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread [as _originalOnread] (net.js:597:20)
+    at TCP.onread (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+  name: 'SequelizeDatabaseError',
+  parent: 
+   { Error: Field 'addtime' doesn't have a default value
+    at Packet.asError (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at Query.Command.execute (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread [as _originalOnread] (net.js:597:20)
+    at TCP.onread (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+     code: 'ER_NO_DEFAULT_FOR_FIELD',
+     errno: 1364,
+     sqlState: 'HY000',
+     sqlMessage: 'Field \'addtime\' doesn\'t have a default value',
+     sql: 'INSERT INTO `admins` (`id`,`adminname`,`password`) VALUES (DEFAULT,\'admin\',\'admin\');' },
+  original: 
+   { Error: Field 'addtime' doesn't have a default value
+    at Packet.asError (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at Query.Command.execute (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread [as _originalOnread] (net.js:597:20)
+    at TCP.onread (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+     code: 'ER_NO_DEFAULT_FOR_FIELD',
+     errno: 1364,
+     sqlState: 'HY000',
+     sqlMessage: 'Field \'addtime\' doesn\'t have a default value',
+     sql: 'INSERT INTO `admins` (`id`,`adminname`,`password`) VALUES (DEFAULT,\'admin\',\'admin\');' },
+  sql: 'INSERT INTO `admins` (`id`,`adminname`,`password`) VALUES (DEFAULT,\'admin\',\'admin\');' }

@@ -1,0 +1,30 @@
+{
+    "mysql": {
+      "host": "127.0.0.1",
+      "database": "ent",
+      "username": "root",
+      "password": "12345678",
+      "dialect": "mysql",
+      "timezone": "+08:00",
+      "pool": {
+        "max": 50,
+        "min": 5,
+        "idle": 30000,
+        "handleDisconnects": true
+      },
+      "isolationLevel": "READ COMMITTED"
+    },
+    "redis": {
+      "host": "127.0.0.1",
+      "post": "6379"
+    },
+    "session": {
+      "redisHost": "127.0.0.1",
+      "redisPort": "6379",
+      "redisTtl": 7200,
+      "redisDb": 2,
+      "secret": "slotmachine",
+      "maxAge": 7200000
+    }
+  }
+  

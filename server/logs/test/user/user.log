@@ -1,0 +1,859 @@
+[2018-06-16 21:46:41.346] [ERROR] user/user - { SequelizeConnectionError: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+    at Utils.Promise.tap.then.catch.err (/Users/wuxiuzhen/workspace/server/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:149:19)
+    at /Users/wuxiuzhen/workspace/server/node_modules/continuation-local-storage/context.js:84:17
+    at tryCatcher (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:512:31)
+    at Promise._settlePromise (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:569:18)
+    at Promise._settlePromise0 (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:689:18)
+    at Async._drainQueue (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/async.js:133:16)
+    at Async._drainQueues (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/async.js:143:10)
+    at Immediate.Async.drainQueues (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/async.js:17:14)
+    at Immediate.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+  name: 'SequelizeConnectionError',
+  parent: 
+   { Error: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+    at Packet.asError (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at ClientHandshake.Command.execute (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread [as _originalOnread] (net.js:597:20)
+    at TCP.onread (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+     code: 'ER_NOT_SUPPORTED_AUTH_MODE',
+     errno: 1251,
+     sqlState: '08004',
+     sqlMessage: 'Client does not support authentication protocol requested by server; consider upgrading MySQL client' },
+  original: 
+   { Error: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+    at Packet.asError (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at ClientHandshake.Command.execute (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread [as _originalOnread] (net.js:597:20)
+    at TCP.onread (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+     code: 'ER_NOT_SUPPORTED_AUTH_MODE',
+     errno: 1251,
+     sqlState: '08004',
+     sqlMessage: 'Client does not support authentication protocol requested by server; consider upgrading MySQL client' },
+  'error@context': {} }
+[2018-06-16 21:48:24.620] [ERROR] user/user - { SequelizeConnectionError: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+    at Utils.Promise.tap.then.catch.err (/Users/wuxiuzhen/workspace/server/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:149:19)
+    at /Users/wuxiuzhen/workspace/server/node_modules/continuation-local-storage/context.js:84:17
+    at tryCatcher (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:512:31)
+    at Promise._settlePromise (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:569:18)
+    at Promise._settlePromise0 (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:689:18)
+    at Async._drainQueue (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/async.js:133:16)
+    at Async._drainQueues (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/async.js:143:10)
+    at Immediate.Async.drainQueues (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/async.js:17:14)
+    at Immediate.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+  name: 'SequelizeConnectionError',
+  parent: 
+   { Error: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+    at Packet.asError (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at ClientHandshake.Command.execute (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread [as _originalOnread] (net.js:597:20)
+    at TCP.onread (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+     code: 'ER_NOT_SUPPORTED_AUTH_MODE',
+     errno: 1251,
+     sqlState: '08004',
+     sqlMessage: 'Client does not support authentication protocol requested by server; consider upgrading MySQL client' },
+  original: 
+   { Error: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+    at Packet.asError (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at ClientHandshake.Command.execute (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread [as _originalOnread] (net.js:597:20)
+    at TCP.onread (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+     code: 'ER_NOT_SUPPORTED_AUTH_MODE',
+     errno: 1251,
+     sqlState: '08004',
+     sqlMessage: 'Client does not support authentication protocol requested by server; consider upgrading MySQL client' },
+  'error@context': {} }
+[2018-06-16 21:50:24.603] [ERROR] user/user - { SequelizeConnectionError: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+    at Utils.Promise.tap.then.catch.err (/Users/wuxiuzhen/workspace/server/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:149:19)
+    at /Users/wuxiuzhen/workspace/server/node_modules/continuation-local-storage/context.js:84:17
+    at tryCatcher (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:512:31)
+    at Promise._settlePromise (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:569:18)
+    at Promise._settlePromise0 (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:689:18)
+    at Async._drainQueue (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/async.js:133:16)
+    at Async._drainQueues (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/async.js:143:10)
+    at Immediate.Async.drainQueues (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/async.js:17:14)
+    at Immediate.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+  name: 'SequelizeConnectionError',
+  parent: 
+   { Error: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+    at Packet.asError (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at ClientHandshake.Command.execute (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread [as _originalOnread] (net.js:597:20)
+    at TCP.onread (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+     code: 'ER_NOT_SUPPORTED_AUTH_MODE',
+     errno: 1251,
+     sqlState: '08004',
+     sqlMessage: 'Client does not support authentication protocol requested by server; consider upgrading MySQL client' },
+  original: 
+   { Error: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+    at Packet.asError (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at ClientHandshake.Command.execute (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread [as _originalOnread] (net.js:597:20)
+    at TCP.onread (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+     code: 'ER_NOT_SUPPORTED_AUTH_MODE',
+     errno: 1251,
+     sqlState: '08004',
+     sqlMessage: 'Client does not support authentication protocol requested by server; consider upgrading MySQL client' },
+  'error@context': {} }
+[2018-06-16 22:08:06.530] [ERROR] user/user - { SequelizeConnectionError: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+    at Utils.Promise.tap.then.catch.err (/Users/wuxiuzhen/workspace/server/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:149:19)
+    at /Users/wuxiuzhen/workspace/server/node_modules/continuation-local-storage/context.js:84:17
+    at tryCatcher (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:512:31)
+    at Promise._settlePromise (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:569:18)
+    at Promise._settlePromise0 (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:689:18)
+    at Async._drainQueue (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/async.js:133:16)
+    at Async._drainQueues (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/async.js:143:10)
+    at Immediate.Async.drainQueues (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/async.js:17:14)
+    at Immediate.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+  name: 'SequelizeConnectionError',
+  parent: 
+   { Error: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+    at Packet.asError (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at ClientHandshake.Command.execute (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread [as _originalOnread] (net.js:597:20)
+    at TCP.onread (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+     code: 'ER_NOT_SUPPORTED_AUTH_MODE',
+     errno: 1251,
+     sqlState: '08004',
+     sqlMessage: 'Client does not support authentication protocol requested by server; consider upgrading MySQL client' },
+  original: 
+   { Error: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+    at Packet.asError (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at ClientHandshake.Command.execute (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread [as _originalOnread] (net.js:597:20)
+    at TCP.onread (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+     code: 'ER_NOT_SUPPORTED_AUTH_MODE',
+     errno: 1251,
+     sqlState: '08004',
+     sqlMessage: 'Client does not support authentication protocol requested by server; consider upgrading MySQL client' },
+  'error@context': {} }
+[2018-06-16 22:10:06.535] [ERROR] user/user - { SequelizeConnectionError: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+    at Utils.Promise.tap.then.catch.err (/Users/wuxiuzhen/workspace/server/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:149:19)
+    at /Users/wuxiuzhen/workspace/server/node_modules/continuation-local-storage/context.js:84:17
+    at tryCatcher (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:512:31)
+    at Promise._settlePromise (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:569:18)
+    at Promise._settlePromise0 (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:689:18)
+    at Async._drainQueue (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/async.js:133:16)
+    at Async._drainQueues (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/async.js:143:10)
+    at Immediate.Async.drainQueues (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/async.js:17:14)
+    at Immediate.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+  name: 'SequelizeConnectionError',
+  parent: 
+   { Error: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+    at Packet.asError (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at ClientHandshake.Command.execute (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread [as _originalOnread] (net.js:597:20)
+    at TCP.onread (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+     code: 'ER_NOT_SUPPORTED_AUTH_MODE',
+     errno: 1251,
+     sqlState: '08004',
+     sqlMessage: 'Client does not support authentication protocol requested by server; consider upgrading MySQL client' },
+  original: 
+   { Error: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+    at Packet.asError (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at ClientHandshake.Command.execute (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread [as _originalOnread] (net.js:597:20)
+    at TCP.onread (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+     code: 'ER_NOT_SUPPORTED_AUTH_MODE',
+     errno: 1251,
+     sqlState: '08004',
+     sqlMessage: 'Client does not support authentication protocol requested by server; consider upgrading MySQL client' },
+  'error@context': {} }
+[2018-06-17 09:36:41.501] [ERROR] user/user - { SequelizeConnectionError: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+    at Utils.Promise.tap.then.catch.err (/Users/wuxiuzhen/workspace/server/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:149:19)
+    at /Users/wuxiuzhen/workspace/server/node_modules/continuation-local-storage/context.js:84:17
+    at tryCatcher (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:512:31)
+    at Promise._settlePromise (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:569:18)
+    at Promise._settlePromise0 (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:689:18)
+    at Async._drainQueue (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/async.js:133:16)
+    at Async._drainQueues (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/async.js:143:10)
+    at Immediate.Async.drainQueues (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/async.js:17:14)
+    at Immediate.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+  name: 'SequelizeConnectionError',
+  parent: 
+   { Error: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+    at Packet.asError (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at ClientHandshake.Command.execute (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread [as _originalOnread] (net.js:597:20)
+    at TCP.onread (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+     code: 'ER_NOT_SUPPORTED_AUTH_MODE',
+     errno: 1251,
+     sqlState: '08004',
+     sqlMessage: 'Client does not support authentication protocol requested by server; consider upgrading MySQL client' },
+  original: 
+   { Error: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+    at Packet.asError (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at ClientHandshake.Command.execute (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread [as _originalOnread] (net.js:597:20)
+    at TCP.onread (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+     code: 'ER_NOT_SUPPORTED_AUTH_MODE',
+     errno: 1251,
+     sqlState: '08004',
+     sqlMessage: 'Client does not support authentication protocol requested by server; consider upgrading MySQL client' },
+  'error@context': {} }
+[2018-06-17 14:36:28.855] [ERROR] user/user - { SequelizeConnectionError: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+    at Utils.Promise.tap.then.catch.err (/Users/wuxiuzhen/workspace/server/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:149:19)
+    at /Users/wuxiuzhen/workspace/server/node_modules/continuation-local-storage/context.js:84:17
+    at tryCatcher (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:512:31)
+    at Promise._settlePromise (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:569:18)
+    at Promise._settlePromise0 (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:689:18)
+    at Async._drainQueue (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/async.js:133:16)
+    at Async._drainQueues (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/async.js:143:10)
+    at Immediate.Async.drainQueues (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/async.js:17:14)
+    at Immediate.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+  name: 'SequelizeConnectionError',
+  parent: 
+   { Error: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+    at Packet.asError (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at ClientHandshake.Command.execute (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread [as _originalOnread] (net.js:597:20)
+    at TCP.onread (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+     code: 'ER_NOT_SUPPORTED_AUTH_MODE',
+     errno: 1251,
+     sqlState: '08004',
+     sqlMessage: 'Client does not support authentication protocol requested by server; consider upgrading MySQL client' },
+  original: 
+   { Error: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+    at Packet.asError (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at ClientHandshake.Command.execute (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread [as _originalOnread] (net.js:597:20)
+    at TCP.onread (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+     code: 'ER_NOT_SUPPORTED_AUTH_MODE',
+     errno: 1251,
+     sqlState: '08004',
+     sqlMessage: 'Client does not support authentication protocol requested by server; consider upgrading MySQL client' },
+  'error@context': {} }
+[2018-06-17 14:37:12.864] [ERROR] user/user - { SequelizeConnectionError: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+    at Utils.Promise.tap.then.catch.err (/Users/wuxiuzhen/workspace/server/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:149:19)
+    at /Users/wuxiuzhen/workspace/server/node_modules/continuation-local-storage/context.js:84:17
+    at tryCatcher (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:512:31)
+    at Promise._settlePromise (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:569:18)
+    at Promise._settlePromise0 (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:689:18)
+    at Async._drainQueue (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/async.js:133:16)
+    at Async._drainQueues (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/async.js:143:10)
+    at Immediate.Async.drainQueues (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/async.js:17:14)
+    at Immediate.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+  name: 'SequelizeConnectionError',
+  parent: 
+   { Error: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+    at Packet.asError (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at ClientHandshake.Command.execute (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread [as _originalOnread] (net.js:597:20)
+    at TCP.onread (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+     code: 'ER_NOT_SUPPORTED_AUTH_MODE',
+     errno: 1251,
+     sqlState: '08004',
+     sqlMessage: 'Client does not support authentication protocol requested by server; consider upgrading MySQL client' },
+  original: 
+   { Error: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+    at Packet.asError (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at ClientHandshake.Command.execute (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread [as _originalOnread] (net.js:597:20)
+    at TCP.onread (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+     code: 'ER_NOT_SUPPORTED_AUTH_MODE',
+     errno: 1251,
+     sqlState: '08004',
+     sqlMessage: 'Client does not support authentication protocol requested by server; consider upgrading MySQL client' },
+  'error@context': {} }
+[2018-06-17 15:04:11.961] [ERROR] user/user - { SequelizeConnectionError: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+    at Utils.Promise.tap.then.catch.err (/Users/wuxiuzhen/workspace/server/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:149:19)
+    at /Users/wuxiuzhen/workspace/server/node_modules/continuation-local-storage/context.js:84:17
+    at tryCatcher (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:512:31)
+    at Promise._settlePromise (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:569:18)
+    at Promise._settlePromise0 (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:689:18)
+    at Async._drainQueue (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/async.js:133:16)
+    at Async._drainQueues (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/async.js:143:10)
+    at Immediate.Async.drainQueues (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/async.js:17:14)
+    at Immediate.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+  name: 'SequelizeConnectionError',
+  parent: 
+   { Error: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+    at Packet.asError (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at ClientHandshake.Command.execute (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread [as _originalOnread] (net.js:597:20)
+    at TCP.onread (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+     code: 'ER_NOT_SUPPORTED_AUTH_MODE',
+     errno: 1251,
+     sqlState: '08004',
+     sqlMessage: 'Client does not support authentication protocol requested by server; consider upgrading MySQL client' },
+  original: 
+   { Error: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+    at Packet.asError (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at ClientHandshake.Command.execute (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread [as _originalOnread] (net.js:597:20)
+    at TCP.onread (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+     code: 'ER_NOT_SUPPORTED_AUTH_MODE',
+     errno: 1251,
+     sqlState: '08004',
+     sqlMessage: 'Client does not support authentication protocol requested by server; consider upgrading MySQL client' },
+  'error@context': {} }
+[2018-06-17 15:12:41.110] [ERROR] user/user - { SequelizeConnectionError: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+    at Utils.Promise.tap.then.catch.err (/Users/wuxiuzhen/workspace/server/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:149:19)
+    at /Users/wuxiuzhen/workspace/server/node_modules/continuation-local-storage/context.js:84:17
+    at tryCatcher (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:512:31)
+    at Promise._settlePromise (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:569:18)
+    at Promise._settlePromise0 (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:689:18)
+    at Async._drainQueue (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/async.js:133:16)
+    at Async._drainQueues (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/async.js:143:10)
+    at Immediate.Async.drainQueues (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/async.js:17:14)
+    at Immediate.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+  name: 'SequelizeConnectionError',
+  parent: 
+   { Error: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+    at Packet.asError (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at ClientHandshake.Command.execute (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread [as _originalOnread] (net.js:597:20)
+    at TCP.onread (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+     code: 'ER_NOT_SUPPORTED_AUTH_MODE',
+     errno: 1251,
+     sqlState: '08004',
+     sqlMessage: 'Client does not support authentication protocol requested by server; consider upgrading MySQL client' },
+  original: 
+   { Error: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+    at Packet.asError (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at ClientHandshake.Command.execute (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread [as _originalOnread] (net.js:597:20)
+    at TCP.onread (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+     code: 'ER_NOT_SUPPORTED_AUTH_MODE',
+     errno: 1251,
+     sqlState: '08004',
+     sqlMessage: 'Client does not support authentication protocol requested by server; consider upgrading MySQL client' },
+  'error@context': {} }
+[2018-06-17 15:13:25.125] [ERROR] user/user - { SequelizeConnectionError: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+    at Utils.Promise.tap.then.catch.err (/Users/wuxiuzhen/workspace/server/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:149:19)
+    at /Users/wuxiuzhen/workspace/server/node_modules/continuation-local-storage/context.js:84:17
+    at tryCatcher (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:512:31)
+    at Promise._settlePromise (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:569:18)
+    at Promise._settlePromise0 (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:689:18)
+    at Async._drainQueue (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/async.js:133:16)
+    at Async._drainQueues (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/async.js:143:10)
+    at Immediate.Async.drainQueues (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/async.js:17:14)
+    at Immediate.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+  name: 'SequelizeConnectionError',
+  parent: 
+   { Error: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+    at Packet.asError (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at ClientHandshake.Command.execute (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread [as _originalOnread] (net.js:597:20)
+    at TCP.onread (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+     code: 'ER_NOT_SUPPORTED_AUTH_MODE',
+     errno: 1251,
+     sqlState: '08004',
+     sqlMessage: 'Client does not support authentication protocol requested by server; consider upgrading MySQL client' },
+  original: 
+   { Error: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+    at Packet.asError (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at ClientHandshake.Command.execute (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread [as _originalOnread] (net.js:597:20)
+    at TCP.onread (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+     code: 'ER_NOT_SUPPORTED_AUTH_MODE',
+     errno: 1251,
+     sqlState: '08004',
+     sqlMessage: 'Client does not support authentication protocol requested by server; consider upgrading MySQL client' },
+  'error@context': {} }
+[2018-06-17 15:14:09.321] [ERROR] user/user - { SequelizeConnectionError: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+    at Utils.Promise.tap.then.catch.err (/Users/wuxiuzhen/workspace/server/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:149:19)
+    at /Users/wuxiuzhen/workspace/server/node_modules/continuation-local-storage/context.js:84:17
+    at tryCatcher (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:512:31)
+    at Promise._settlePromise (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:569:18)
+    at Promise._settlePromise0 (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:689:18)
+    at Async._drainQueue (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/async.js:133:16)
+    at Async._drainQueues (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/async.js:143:10)
+    at Immediate.Async.drainQueues (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/async.js:17:14)
+    at Immediate.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+  name: 'SequelizeConnectionError',
+  parent: 
+   { Error: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+    at Packet.asError (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at ClientHandshake.Command.execute (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread [as _originalOnread] (net.js:597:20)
+    at TCP.onread (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+     code: 'ER_NOT_SUPPORTED_AUTH_MODE',
+     errno: 1251,
+     sqlState: '08004',
+     sqlMessage: 'Client does not support authentication protocol requested by server; consider upgrading MySQL client' },
+  original: 
+   { Error: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+    at Packet.asError (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at ClientHandshake.Command.execute (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread [as _originalOnread] (net.js:597:20)
+    at TCP.onread (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+     code: 'ER_NOT_SUPPORTED_AUTH_MODE',
+     errno: 1251,
+     sqlState: '08004',
+     sqlMessage: 'Client does not support authentication protocol requested by server; consider upgrading MySQL client' },
+  'error@context': {} }
+[2018-06-17 16:24:04.255] [ERROR] user/user - { SequelizeConnectionError: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+    at Utils.Promise.tap.then.catch.err (/Users/wuxiuzhen/workspace/server/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:149:19)
+    at /Users/wuxiuzhen/workspace/server/node_modules/continuation-local-storage/context.js:84:17
+    at tryCatcher (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:512:31)
+    at Promise._settlePromise (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:569:18)
+    at Promise._settlePromise0 (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:689:18)
+    at Async._drainQueue (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/async.js:133:16)
+    at Async._drainQueues (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/async.js:143:10)
+    at Immediate.Async.drainQueues (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/async.js:17:14)
+    at Immediate.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+  name: 'SequelizeConnectionError',
+  parent: 
+   { Error: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+    at Packet.asError (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at ClientHandshake.Command.execute (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread [as _originalOnread] (net.js:597:20)
+    at TCP.onread (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+     code: 'ER_NOT_SUPPORTED_AUTH_MODE',
+     errno: 1251,
+     sqlState: '08004',
+     sqlMessage: 'Client does not support authentication protocol requested by server; consider upgrading MySQL client' },
+  original: 
+   { Error: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+    at Packet.asError (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at ClientHandshake.Command.execute (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread [as _originalOnread] (net.js:597:20)
+    at TCP.onread (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+     code: 'ER_NOT_SUPPORTED_AUTH_MODE',
+     errno: 1251,
+     sqlState: '08004',
+     sqlMessage: 'Client does not support authentication protocol requested by server; consider upgrading MySQL client' },
+  'error@context': {} }
+[2018-06-17 16:24:48.299] [ERROR] user/user - { SequelizeConnectionError: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+    at Utils.Promise.tap.then.catch.err (/Users/wuxiuzhen/workspace/server/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:149:19)
+    at /Users/wuxiuzhen/workspace/server/node_modules/continuation-local-storage/context.js:84:17
+    at tryCatcher (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:512:31)
+    at Promise._settlePromise (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:569:18)
+    at Promise._settlePromise0 (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:689:18)
+    at Async._drainQueue (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/async.js:133:16)
+    at Async._drainQueues (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/async.js:143:10)
+    at Immediate.Async.drainQueues (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/async.js:17:14)
+    at Immediate.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+  name: 'SequelizeConnectionError',
+  parent: 
+   { Error: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+    at Packet.asError (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at ClientHandshake.Command.execute (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread [as _originalOnread] (net.js:597:20)
+    at TCP.onread (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+     code: 'ER_NOT_SUPPORTED_AUTH_MODE',
+     errno: 1251,
+     sqlState: '08004',
+     sqlMessage: 'Client does not support authentication protocol requested by server; consider upgrading MySQL client' },
+  original: 
+   { Error: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+    at Packet.asError (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at ClientHandshake.Command.execute (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread [as _originalOnread] (net.js:597:20)
+    at TCP.onread (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+     code: 'ER_NOT_SUPPORTED_AUTH_MODE',
+     errno: 1251,
+     sqlState: '08004',
+     sqlMessage: 'Client does not support authentication protocol requested by server; consider upgrading MySQL client' },
+  'error@context': {} }
+[2018-06-17 16:26:31.710] [ERROR] user/user - { SequelizeConnectionError: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+    at Utils.Promise.tap.then.catch.err (/Users/wuxiuzhen/workspace/server/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:149:19)
+    at /Users/wuxiuzhen/workspace/server/node_modules/continuation-local-storage/context.js:84:17
+    at tryCatcher (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:512:31)
+    at Promise._settlePromise (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:569:18)
+    at Promise._settlePromise0 (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:689:18)
+    at Async._drainQueue (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/async.js:133:16)
+    at Async._drainQueues (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/async.js:143:10)
+    at Immediate.Async.drainQueues (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/async.js:17:14)
+    at Immediate.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+  name: 'SequelizeConnectionError',
+  parent: 
+   { Error: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+    at Packet.asError (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at ClientHandshake.Command.execute (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread [as _originalOnread] (net.js:597:20)
+    at TCP.onread (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+     code: 'ER_NOT_SUPPORTED_AUTH_MODE',
+     errno: 1251,
+     sqlState: '08004',
+     sqlMessage: 'Client does not support authentication protocol requested by server; consider upgrading MySQL client' },
+  original: 
+   { Error: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+    at Packet.asError (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at ClientHandshake.Command.execute (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wuxiuzhen/workspace/server/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread [as _originalOnread] (net.js:597:20)
+    at TCP.onread (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+     code: 'ER_NOT_SUPPORTED_AUTH_MODE',
+     errno: 1251,
+     sqlState: '08004',
+     sqlMessage: 'Client does not support authentication protocol requested by server; consider upgrading MySQL client' },
+  'error@context': {} }
+[2018-06-17 16:46:15.719] [ERROR] user/user - ReferenceError: Util is not defined
+    at /Users/wuxiuzhen/workspace/server/controller/user/user.js:23:23
+    at Generator.next (<anonymous>)
+    at onFulfilled (/Users/wuxiuzhen/workspace/server/node_modules/co/index.js:65:19)
+    at /Users/wuxiuzhen/workspace/server/node_modules/continuation-local-storage/context.js:84:17
+    at tryCatcher (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:512:31)
+    at Promise._settlePromise (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:569:18)
+    at Promise._settlePromise0 (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:693:18)
+    at Async._drainQueue (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/async.js:133:16)
+    at Async._drainQueues (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/async.js:143:10)
+    at Immediate.Async.drainQueues (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/async.js:17:14)
+    at Immediate._onImmediate (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+[2018-06-17 16:46:59.639] [ERROR] user/user - ReferenceError: Util is not defined
+    at /Users/wuxiuzhen/workspace/server/controller/user/user.js:23:23
+    at Generator.next (<anonymous>)
+    at onFulfilled (/Users/wuxiuzhen/workspace/server/node_modules/co/index.js:65:19)
+    at /Users/wuxiuzhen/workspace/server/node_modules/continuation-local-storage/context.js:84:17
+    at tryCatcher (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:512:31)
+    at Promise._settlePromise (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:569:18)
+    at Promise._settlePromise0 (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/promise.js:693:18)
+    at Async._drainQueue (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/async.js:133:16)
+    at Async._drainQueues (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/async.js:143:10)
+    at Immediate.Async.drainQueues (/Users/wuxiuzhen/workspace/server/node_modules/bluebird/js/release/async.js:17:14)
+    at Immediate._onImmediate (/Users/wuxiuzhen/workspace/server/node_modules/async-listener/glue.js:188:31)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)

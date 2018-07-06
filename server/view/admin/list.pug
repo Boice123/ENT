@@ -1,0 +1,55 @@
+doctype html
+html
+    head
+        meta(charset="UTF8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="format-detection", content="telephone=no, email=no")
+        meta(name="description" content="")
+        meta(name="keywords" content="")
+        title= title
+        //- link(href="../element-ui/theme-chalk/index.css" , rel='stylesheet')
+    body
+        el-container#app(v-cloak)
+            el-header
+                el-row
+                    el-col.text-left(:span=6)
+                        h1 管理员列表
+            el-container
+                el-container
+                    el-main(style="width:400px;margin:0 auto;")
+                        el-table(:data="adminList" border stripe style="width: 100%")
+                            el-table-column(prop="id" label="ID" width="50")
+                            el-table-column(prop="adminname"  label="管理员账号" width="100")
+                            el-table-column(prop="password"  label="管理员密码" width="100")
+                            
+    include /cssjs_foot.pug
+    script.
+        var adminList = !{list};
+        var app = new Vue({
+            el: "#app",
+            data: function() {
+                return {
+                    adminList
+                }
+            },
+            //- mounted: function() {
+            //-     this.listuser();
+            //- },
+            methods: {
+                listuser: function(page, size) {
+                    var self = this;
+                    console.log("hehe")
+                    $.ajax({
+                        url: Api.adminListjson,
+                        method: "get",
+                        dataType: 'json',
+                        success: function(result) {
+                            if (result.status == 0) {
+                                console.log(result.data)
+                                self.adminList = result.data.list;
+                            }
+                        }
+                    });
+                }
+            }
+         })
